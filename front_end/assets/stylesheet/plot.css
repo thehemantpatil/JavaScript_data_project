@@ -1,0 +1,316 @@
+* {
+    margin: 0px;
+}
+
+.main {
+    background-color: #0A192F;
+    margin: 0px;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 50px;
+}
+
+.menu_image {
+    justify-self: flex-end;
+}
+
+.menu_image a {
+    display: none;
+}
+
+.menu_image img {
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    align-self: flex-end;
+}
+
+.nav_list {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 60%;
+    height: 100%;
+    background-color: #112240;
+    z-index: 1;
+}
+
+.nav_list a {
+    padding: 30px;
+    color: white;
+    font-family: 'Poppins';
+    font-size: 20px;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.parent_span {
+    padding: 10px;
+    background-color: cadetblue;
+}
+
+.nav_list span {
+    color: rgb(172, 167, 167);
+    position: absolute;
+    top: 25px;
+    right: 15px;
+    font-size: 35px;
+    color: cyan;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#prev_span {
+    margin-top: -15px;
+    transform: rotateZ(25deg);
+    transition-duration: 0.5s;
+}
+
+#next_span {
+    margin-top: -15px;
+    transform: rotateZ(-25deg);
+    transition-duration: 0.5s;
+}
+
+.nav_list a:hover {
+    background-color: green;
+    opacity: 0.7;
+}
+
+.nav_list span:hover #next_span {
+    transform: rotateZ(70deg);
+}
+
+.nav_list span:hover #prev_span {
+    transform: rotateZ(110deg);
+}
+
+
+/* whiteboard */
+
+.parent_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    row-gap: 50px;
+    padding: 50px 0px;
+}
+
+.whiteboard_container {
+    background-color: white;
+    width: 50%;
+    justify-self: center;
+    padding: 20px;
+}
+
+.whiteboard_container:hover {
+    border: 1px solid black;
+}
+
+.button a:hover {
+    background-color: green;
+}
+
+img {
+    width: 100%;
+}
+
+.image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px dotted gray;
+    padding-bottom: 20px;
+}
+
+.image a {
+    color: black;
+}
+
+.image div {
+    padding: 15px 0px;
+}
+
+.image div span {
+    font-size: 1.2em;
+    opacity: 0.8;
+}
+
+.button {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-right: 8%;
+    padding-top: 20px;
+}
+
+.button a {
+    background-color: #2edeeb;
+    padding: 10px 0px;
+    border-radius: 50px;
+    justify-self: flex-end;
+    color: white;
+    width: 150px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Helvetica;
+    text-decoration: none;
+}
+
+@media all and (min-width:768px) and (max-width: 1094px) {
+    nav {
+        padding: 20px;
+        justify-self: flex-end;
+        margin-right: 7%;
+    }
+    .menu_image {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .menu_image img {
+        display: none;
+    }
+    .menu_image a {
+        display: flex;
+        padding: 15px 20px;
+        color: white;
+        font-family: 'Poppins';
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: none;
+        opacity: 0.7;
+        height: 28px;
+    }
+    .menu_image a:hover {
+        background-color: green;
+    }
+    /* whiteboard */
+    .parent_container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        row-gap: 30px;
+        padding: 20px 0px;
+    }
+    .whiteboard_container {
+        background-color: white;
+        width: 70%;
+        justify-self: center;
+        padding: 20px;
+    }
+    .image {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 2px dotted gray;
+        padding-bottom: 20px;
+    }
+    .image a {
+        color: black;
+    }
+    .image div {
+        padding: 15px 0px;
+    }
+    .image div span {
+        font-size: 1.5em;
+    }
+    .button {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-right: 50px;
+        padding-top: 20px;
+    }
+    .button a {
+        background-color: #2edeeb;
+        padding: 10px 0px;
+        border-radius: 50px;
+        justify-self: flex-end;
+        color: white;
+        width: 120px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: Helvetica;
+    }
+}
+
+@media all and (min-width:1094px) {
+    nav {
+        padding: 20px;
+        justify-self: flex-end;
+        margin-right: 7%;
+    }
+    .menu_image {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .menu_image img {
+        display: none;
+    }
+    .menu_image a {
+        display: flex;
+        padding: 15px 20px;
+        color: white;
+        font-family: 'Poppins';
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: none;
+        opacity: 0.7;
+        height: 28px;
+    }
+    .menu_image a:hover {
+        background-color: green;
+    }
+    /* .parent_container; */
+    .parent_container {
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        row-gap: 30px;
+        padding: 20px 0px;
+    }
+    img {
+        width: 100%;
+    }
+    .whiteboard_container {
+        background-color: white;
+        width: 60%;
+        height: 90%;
+        justify-self: center;
+        padding: 20px;
+    }
+    .image {
+        padding-bottom: 5px;
+    }
+    .whiteboard_container div span {
+        font-size: 1.2em;
+    }
+    .button {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-top: 20px;
+    }
+    .button a {
+        background-color: #2edeeb;
+        padding: 10px 0px;
+        border-radius: 50px;
+        justify-self: flex-end;
+        color: white;
+        width: 120px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: Helvetica;
+    }
+}

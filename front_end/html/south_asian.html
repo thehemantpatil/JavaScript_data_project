@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <title>South Asia Population</title>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="../assets/script/sidebar.js"></script>
+    <link rel="stylesheet" href="../assets/stylesheet/common.css">
+</head>
+
+<body>
+    <div class="parent_container">
+        <nav>
+            <div class="menu_image">
+                <img onclick="display_menu()" src="../assets/images/menu1.png" alt="menu">
+                <a href="../plot.html">1. &nbsp; Home </a>
+                <a href="./india_plot.html">2. &nbsp; India</a>
+                <a href="./saarc.html">3. &nbsp; SAARC</a>
+                <a href="./grouped_asia.html">4. &nbsp; Asia</a>
+            </div>
+            <div class="nav_list">
+                <span onclick="hide_sidebar()" class="parent"> <span id="prev_span">/</span> <span id="next_span">\</span>
+                </span>
+                <a href="../plot.html">1. &nbsp; Home </a>
+                <a href="./south_asian.html">2. &nbsp; South Asia</a>
+                <a href="./saarc.html">3. &nbsp; SAARC</a>
+                <a href="./grouped_asia.html">4. &nbsp; Asia</a>
+            </div>
+        </nav>
+
+        <div id="container"></div>
+    </div>
+    <script type="module">
+        import { regionPopulation } from '../assets/script/plotting.js'; import { south_asia } from '../assets/script/plotting_objects.js'; regionPopulation(south_asia);
+    </script>
+
+</body>
+
+</html>
