@@ -2,7 +2,7 @@
    The objects containing properties required of each scenarious.*/
 
 const india = {
-    url: 'http://localhost:8000/python/json/india_population.json',
+    url: 'https://github.com/thehemantpatil/JavaScript_data_project/blob/master/python/json/india_population.json',
     chart: {
         type: 'column'
     },
@@ -64,7 +64,7 @@ const india = {
 }
 
 const south_asia = {
-    url: 'http://localhost:8000/python/json/south_asia_population.json',
+    url: 'https://github.com/thehemantpatil/JavaScript_data_project/blob/master/python/json/south_asia_population.json',
     chart: {
         type: 'column'
     },
@@ -127,7 +127,7 @@ const south_asia = {
 }
 
 const saarc = {
-    url: 'http://localhost:8000/python/json/saarc_population.json',
+    url: 'https://github.com/thehemantpatil/JavaScript_data_project/blob/master/python/json/saarc_population.json',
     chart: {
         type: 'column'
     },
@@ -190,7 +190,7 @@ const saarc = {
 
 const grouped_asia = {
     key: 'asia',
-    url: 'http://localhost:8000/python/json/asia_population.json',
+    url: 'https://github.com/thehemantpatil/JavaScript_data_project/blob/master/python/json/asia_population.json',
     chart: {
         type: 'column'
     },
